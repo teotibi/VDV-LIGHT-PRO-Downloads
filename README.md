@@ -9,6 +9,12 @@
 - Aggiornati il numero di versione e i pacchetti di installazione.
 <!-- CHANGELOG_END -->
 
+## Ricevi gli aggiornamenti via email
+
+Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, con il numero della release, l’elenco delle novità e il link diretto alla pagina ufficiale dei download. Puoi annullare l’iscrizione in qualsiasi momento dal link presente in ogni email.
+
+[Iscriviti agli aggiornamenti di VDV_LIGHT PRO](https://buttondown.com/tibiletti)
+
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
