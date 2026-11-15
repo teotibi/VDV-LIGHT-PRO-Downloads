@@ -3,25 +3,21 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.3.1
+## Cosa c'è di nuovo in v0.3.2
 
-- Aggiunta la vista PALCO 3D per posizionare i fari e vedere l'effetto dei cue luce.
-- Aggiunti il controllo tramite dispositivi MIDI e il tastierino con effetti audio.
-- Estese le funzioni QLab 5, con importazione ed esportazione dei progetti.
-- Migliorata la gestione dei percorsi e dei dati dell'app su Windows.
-- Disponibili installer Windows e DMG per Mac Apple Silicon e Intel, con versioni numerate.
+- Nessuna modifica funzionale rispetto a v0.3.1; aggiornati il numero di versione e i pacchetti di installazione.
 <!-- CHANGELOG_END -->
 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.3.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.3.2** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.3.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO.-.Setup.exe) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-Lite-Pro-Downloads/v0.3.1/VDV_LIGHT.PRO.-.Setup.exe?label=download&style=flat-square)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/tag/v0.3.1)
+[![Windows 64 bit — scarica v0.3.2](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.2-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.2/VDV_LIGHT.PRO.-.Setup.exe) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-Lite-Pro-Downloads/v0.3.2/VDV_LIGHT.PRO.-.Setup.exe?label=download&style=flat-square)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/tag/v0.3.2)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-Lite-Pro-Downloads/v0.3.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/tag/v0.3.1)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.2](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.2-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.2/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-Lite-Pro-Downloads/v0.3.2/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/tag/v0.3.2)
 
-[![macOS Intel — v0.3.1](https://img.shields.io/badge/macOS-Intel%20v0.3.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-Lite-Pro-Downloads/v0.3.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/tag/v0.3.1)
+[![macOS Intel — v0.3.2](https://img.shields.io/badge/macOS-Intel%20v0.3.2-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.2/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-Lite-Pro-Downloads/v0.3.2/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/tag/v0.3.2)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases)
