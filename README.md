@@ -9,26 +9,12 @@
 - Aggiunti il controllo tramite dispositivi MIDI e il tastierino con effetti audio.
 - Estese le funzioni QLab 5, con importazione ed esportazione dei progetti.
 - Migliorata la gestione dei percorsi e dei dati dell'app su Windows.
-- Disponibili installer Windows e DMG per Mac Apple Silicon e Intel, con download stabili e versioni numerate.
+- Disponibili installer Windows e DMG per Mac Apple Silicon e Intel, con versioni numerate.
 <!-- CHANGELOG_END -->
 
-<!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.3.1
+## Scarica l'ultima versione
 
-- Aggiunta la vista PALCO 3D per posizionare i fari e vedere l'effetto dei cue luce.
-- Aggiunti il controllo tramite dispositivi MIDI e il tastierino con effetti audio.
-- Estese le funzioni QLab 5, con importazione ed esportazione dei progetti.
-- Migliorata la gestione dei percorsi e dei dati dell'app su Windows.
-- Disponibili installer Windows e DMG per Mac Apple Silicon e Intel, con versioni numerate.
-<!-- CHANGELOG_END -->\n\n<!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.3.1
-
-- Aggiunta la vista PALCO 3D per posizionare i fari e vedere l'effetto dei cue luce.
-- Aggiunti il controllo tramite dispositivi MIDI e il tastierino con effetti audio.
-- Estese le funzioni QLab 5, con importazione ed esportazione dei progetti.
-- Migliorata la gestione dei percorsi e dei dati dell'app su Windows.
-- Disponibili installer Windows e DMG per Mac Apple Silicon e Intel, con versioni numerate.
-<!-- CHANGELOG_END -->\n\n## Scarica l'ultima versione\n\n<!-- APP_VERSION_BLOCK_START -->
+<!-- APP_VERSION_BLOCK_START -->
 **Versione disponibile: v0.3.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
 [![Windows 64 bit — scarica v0.3.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO.-.Setup.exe)
@@ -36,7 +22,9 @@
 [![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO-arm64.dmg)
 
 [![macOS Intel — v0.3.1](https://img.shields.io/badge/macOS-Intel%20v0.3.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO-x86_64.dmg)
-<!-- APP_VERSION_BLOCK_END -->\n\n[Altri download e versioni precedenti](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases)
+<!-- APP_VERSION_BLOCK_END -->
+
+[Altri download e versioni precedenti](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases)
 
 ## Installazione
 
