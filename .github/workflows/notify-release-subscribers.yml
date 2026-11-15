@@ -1,0 +1,59 @@
+name: Notifica gli iscritti alla newsletter
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag della release pubblicata (es. v0.3.3)
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recupera le note della release
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          release_json="$(gh api "repos/$REPOSITORY/releases/tags/$TAG")"
+          title="$(jq -r '.name // .tag_name' <<< "$release_json")"
+          notes="$(jq -r '.body // ""' <<< "$release_json")"
+          {
+            echo "title=$title"
+            echo "notes<<VDV_RELEASE_NOTES"
+            printf '%s\n' "$notes"
+            echo "VDV_RELEASE_NOTES"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Invia aggiornamento con Buttondown
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          RELEASE_TITLE: ${{ steps.release.outputs.title }}
+          RELEASE_NOTES: ${{ steps.release.outputs.notes }}
+          TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${BUTTONDOWN_API_KEY:-}" ]]; then
+            echo "::error::Manca il secret BUTTONDOWN_API_KEY nelle impostazioni Actions del repository."
+            exit 1
+          fi
+
+          body="$(printf 'Ciao!\n\nÈ disponibile %s.\n\n## Cosa c’è di nuovo\n\n%s\n\n## Download\n\nTrovi gli installer aggiornati per Windows e macOS (Apple Silicon e Intel) nella pagina ufficiale: https://github.com/teotibi/VDV-Lite-Pro-Downloads\n' "$RELEASE_TITLE" "$RELEASE_NOTES")"
+          payload="$(jq -n --arg subject "VDV_LIGHT PRO — $RELEASE_TITLE" --arg body "$body" --arg status "about_to_send" '{subject:$subject, body:$body, status:$status}')"
+          curl --fail-with-body --silent --show-error \
+            -X POST "https://api.buttondown.com/v1/emails" \
+            -H "Authorization: Token $BUTTONDOWN_API_KEY" \
+            -H "Content-Type: application/json" \
+            -H "X-API-Version: 2025-06-01" \
+            --data "$payload" >/dev/null
+          echo "Newsletter accodata per $TAG."
