@@ -5,7 +5,8 @@
 <!-- CHANGELOG_START -->
 ## Cosa c'è di nuovo in v0.3.2
 
-- Nessuna modifica funzionale rispetto a v0.3.1; aggiornati il numero di versione e i pacchetti di installazione.
+- Aggiunta la creazione di gruppi di luci, per organizzare più cue e avviarli insieme o in sequenza.
+- Aggiornati il numero di versione e i pacchetti di installazione.
 <!-- CHANGELOG_END -->
 
 ## Scarica l'ultima versione
