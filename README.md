@@ -17,11 +17,11 @@
 <!-- APP_VERSION_BLOCK_START -->
 **Versione disponibile: v0.3.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.3.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO.-.Setup.exe)
+[![Windows 64 bit — scarica v0.3.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO.-.Setup.exe) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-Lite-Pro-Downloads/v0.3.1/VDV_LIGHT.PRO.-.Setup.exe?label=download&style=flat-square)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/tag/v0.3.1)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO-arm64.dmg)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-Lite-Pro-Downloads/v0.3.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/tag/v0.3.1)
 
-[![macOS Intel — v0.3.1](https://img.shields.io/badge/macOS-Intel%20v0.3.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO-x86_64.dmg)
+[![macOS Intel — v0.3.1](https://img.shields.io/badge/macOS-Intel%20v0.3.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/download/v0.3.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-Lite-Pro-Downloads/v0.3.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases/tag/v0.3.1)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-Lite-Pro-Downloads/releases)
