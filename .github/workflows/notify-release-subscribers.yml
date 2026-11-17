@@ -24,6 +24,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          normalized_tag="${TAG#v}"
+          TAG="v${normalized_tag}"
           release_json="$(gh api "repos/$REPOSITORY/releases/tags/$TAG")"
           title="$(jq -r '.name // .tag_name' <<< "$release_json")"
           notes="$(jq -r '.body // ""' <<< "$release_json")"
