@@ -3,44 +3,11 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.3.4
+## Cosa c'è di nuovo in v0.3.6
 
-- VDV_LIGHT PRO — novità della versione 0.3.4
-- Autore: Matteo Tibiletti
-- 
-- Autodetect (Impostazioni luci DMX › 5 · Autodetect)
-- - Per un teatro che non conosci: «Cerca fari (RDM)» trova i nodi Art-Net sulla
--   rete e legge da ogni faro con RDM marca, modello, indirizzo e canali
--   (con i nomi). Se la marca è nota usa il modello della libreria di QLab.
-- - Se non riconosce la marca distingue comunque dimmer, RGB, RGBW e teste mobili.
-- - «Ascolta la console»: per i fari senza RDM propone i fari dai canali che si
--   muovono (sono ipotesi da correggere).
-- - Ogni faro trovato ha la spunta «Prova»; nomi, modelli, universi, indirizzi
--   e canali si correggono. «Salva questo setting luci» li porta in «I miei fari».
--   (Provato con un nodo simulato: la prima volta su apparecchi veri verifica
--   in anticipo.)
-- 
-- Luci
-- - Gruppi di fari: «Aggiungi gruppo» mette più fari insieme; nel dashboard luci
--   ogni valore vale per tutti i fari del gruppo. Si modificano, si eliminano e
--   si salvano come preset.
-- - Palco 3D dal vivo nel dashboard luci (a destra): vedi quale luce accendi.
-- - Libreria fari di QLab 5 (6272 modelli, 71 marche): «Scegli tra i fari di QLab…».
-- - Canali dei fari: rinomina, disattiva («Attivo») o elimina ogni canale.
-- - Preset: salva l'impianto luci (fari, uscite DMX, palco 3D) e i gruppi;
--   elimina i preset che non servono.
-- 
-- Schermo di uscita (proiettore)
-- - Scegli lo schermo collegato dall'elenco (si aggiorna da solo quando colleghi
--   o scolleghi un monitor); la finestra va a tutto schermo lì.
-- 
-- Lavoro di tutti i giorni
-- - Annulla / ripristina fino a 100 passi: Cmd/Ctrl+Z e Cmd/Ctrl+Shift+Z (anche
--   fari, uscite DMX e palco).
-- - Palco 3D: il pannello laterale non schiaccia più la vista.
-- - File › Info: versione e autore.
-- - Gli show ricordano con quale versione sono stati salvati e avvisano se
--   vengono da una versione più recente.
+- Modificato: Cargo.lock
+- Modificato: Cargo.toml
+- Modificato: src/app/panels.rs
 
 <!-- CHANGELOG_END -->
 
@@ -53,13 +20,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.3.4** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.3.6** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.3.4](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.4-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.4/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.4/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.4)
+[![Windows 64 bit — scarica v0.3.6](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.6-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.6/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.6/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.6)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.4](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.4-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.4/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.4/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.4)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.6](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.6-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.6/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.6/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.6)
 
-[![macOS Intel — v0.3.4](https://img.shields.io/badge/macOS-Intel%20v0.3.4-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.4/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.4/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.4)
+[![macOS Intel — v0.3.6](https://img.shields.io/badge/macOS-Intel%20v0.3.6-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.6/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.6/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.6)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
