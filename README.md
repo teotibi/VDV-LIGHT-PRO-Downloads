@@ -3,17 +3,75 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.3.9
+## Cosa c'è di nuovo in v0.3.9.1
 
-VDV_LIGHT PRO — novità della versione 0.3.9
+VDV_LIGHT PRO — novità della versione 0.3.9.1
 Autore: Matteo Tibiletti
 
-Pagina download — versione 0.3.9
-Questa versione migliora le sequenze, la timeline in tempo reale durante la
-riproduzione e il movimento delle teste mobili. Gli show salvati con la 0.3.8
-si aprono senza problemi.
+Pagina download — versione 0.3.9.1
+Questa versione sistema il movimento delle teste mobili (fluidità, calibrazione,
+modifica dei keyframe in diretta sul palco 3D e sulle luci vere), rende più
+affidabile l'ascolto della console nell'autodetect e aggiunge il Blackout.
+Gli show salvati con la 0.3.9 e la 0.3.8 si aprono senza problemi.
 
-Novità rispetto alla 0.3.8
+Novità rispetto alla 0.3.9
+
+Movimento delle teste mobili: più fluido
+- Prima il movimento poteva andare «a scatti» anche con lo stile Fluido: il
+  programma aggiornava le luci solo quando qualcos'altro ridisegnava la
+  finestra. Ora, finché un cue è in esecuzione, le luci si aggiornano circa
+  60 volte al secondo e l'uscita DMX parte circa 44 volte al secondo.
+- Quando un valore cambia, il fotogramma DMX parte subito (entro 12 ms) invece
+  di aspettare il giro successivo.
+
+Finestra Movimento
+- Per ogni testa e per ogni keyframe c'è un menu a tendina con TUTTI i canali
+  DMX della testa (indirizzo · nome) e accanto lo slider del canale scelto:
+  scala 0-100 % per i canali in percentuale, 0-255 (o 0-65535 per i canali a
+  16 bit) per quelli grezzi, con valori interi.
+- Accanto a «Il movimento nel tempo» c'è l'anteprima 3D del palco in diretta
+  (il frame del movimento è stato ristretto per fargli posto).
+- Quando tocchi o cambi un keyframe (A, B, C…) il palco 3D mostra solo quel
+  punto, con la testa dove e come sarà lì; il punto precedente è spento. Il
+  keyframe in modifica è evidenziato in giallo. Play, ⏮ o lo slider
+  dell'anteprima riportano il palco alla vista nel tempo.
+- Lo stesso punto va anche alle luci vere collegate («Mostra anche sulle luci
+  vere», attivo di default). L'anteprima nel tempo non muove mai le luci vere.
+
+Calibrazione delle teste
+- La calibrazione ora vale anche per il palco 3D: Pan e Tilt passano dalla
+  stessa regola per le luci vere e per l'anteprima, così il punto che hai
+  calibrato come perpendicolare lo è anche nel 3D, e agli estremi la testa 3D
+  si ferma dove si ferma quella vera.
+- Durante la calibrazione la testa 3D è disegnata perpendicolare dove la stai
+  puntando.
+
+Autodetect e DMX
+- «Ascolta la console» ora ascolta sia Art-Net sia sACN (E1.31), manda la
+  richiesta ai nodi ogni 3 secondi come QLab, e dice quanti pacchetti ha sentito
+  e quali nodi Art-Net hanno risposto.
+- Se la console è collegata con un normale cavo DMX o con un'interfaccia USB il
+  programma non può ascoltarla: serve un nodo Art-Net o sACN. Il messaggio lo dice.
+- Nuovo pulsante Blackout (scheda DMX e Autodetect): manda 0 su tutti i 512
+  canali di ogni uscita, anche su quelli senza fari. Se una luce resta accesa
+  dopo il blackout, la sta comandando un'altra sorgente (la console o un altro
+  programma).
+
+Timeline
+- La linea rossa è larga 1 px e ha un margine di 20 px sopra e sotto, come in
+  QLab; lo zoom ignora valori non positivi.
+
+Regole verificate su QLab (indirizzi delle funzioni in MECHANICS.md)
+- Aggiornamento dei cue in esecuzione, ritrasmissione Art-Net (0,7 s / 0,8 s),
+  scadenza dei nodi (10 s), scala degli slider dei parametri, arrotondamento dei
+  valori prima che vadano alle luci.
+
+Cosa non c'è (ancora)
+- L'ascolto della console non legge il DMX da un cavo o da un'interfaccia USB.
+- Il numero «build» resta 309 (come la 0.3.9): il quarto numero della versione
+  non lo cambia.
+
+Riepilogo della 0.3.9 (rispetto alla 0.3.8)
 
 Sequenze
 - Una sequenza ora contiene i suoi cue: trascina un cue sulla parte bassa della
@@ -105,7 +163,7 @@ Riepilogo della 0.3.7 (nuovo rispetto alla 0.3.5)
 - Versione mostrata nel menu File e in «Info».
 
 Pacchetti
-- Nuovi pacchetti 0.3.9: per Mac due dischi (.dmg), uno per i Mac con chip Apple
+- Nuovi pacchetti 0.3.9.1: per Mac due dischi (.dmg), uno per i Mac con chip Apple
   (arm64) e uno per i Mac Intel (x86_64); per Windows lo .zip. Tutti con queste note.
 - Per aggiornare: sostituisci la vecchia app con quella nuova. Gli show salvati,
   la libreria dei fari e le impostazioni non vengono cancellati.
@@ -121,13 +179,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.3.9** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.3.9.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.3.9](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.9-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9)
+[![Windows 64 bit — scarica v0.3.9.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.9.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.1/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.1/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.1)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.9](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.9-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.9.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.9.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.1)
 
-[![macOS Intel — v0.3.9](https://img.shields.io/badge/macOS-Intel%20v0.3.9-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9)
+[![macOS Intel — v0.3.9.1](https://img.shields.io/badge/macOS-Intel%20v0.3.9.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.1)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
