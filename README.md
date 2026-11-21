@@ -3,12 +3,44 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.3.8
+## Cosa c'è di nuovo in v0.3.9
 
-VDV_LIGHT PRO — novità della versione 0.3.8
+VDV_LIGHT PRO — novità della versione 0.3.9
 Autore: Matteo Tibiletti
 
-Novità rispetto alla 0.3.7
+Pagina download — versione 0.3.9
+Questa versione migliora le sequenze, la timeline in tempo reale durante la
+riproduzione e il movimento delle teste mobili. Gli show salvati con la 0.3.8
+si aprono senza problemi.
+
+Novità rispetto alla 0.3.8
+
+Sequenze
+- Una sequenza ora contiene i suoi cue: trascina un cue sulla parte bassa della
+  riga della sequenza, oppure tra due righe al suo interno, per inserirlo.
+- Con più cue selezionati, «Aggiungi › Sequenza» li mette automaticamente dentro
+  una nuova sequenza, al posto del primo cue selezionato.
+- Un nuovo cue creato con una sequenza selezionata finisce dentro la sequenza;
+  se è selezionato un cue già dentro, il nuovo va subito dopo di lui.
+- Una sequenza non può essere spostata dentro sé stessa. Ogni spostamento è un
+  solo passo di «Annulla».
+- Durata della sequenza: il più lungo dei cue (insieme) o la somma (uno dopo
+  l'altro). Una sequenza vuota mostra «vuota · trascina qui i cue».
+
+Timeline dal vivo durante la riproduzione
+- La linea rossa della timeline avanza in tempo reale mentre la sequenza suona,
+  sia che parta con GO, con il pulsante Play o con un trigger; si ferma in pausa.
+- Play, Pausa e Stop agiscono su tutti i cue della sequenza.
+- I blocchi dei cue si spostano e si ridimensionano con il mouse, con aggancio
+  a inizio/fine degli altri cue entro 8 pixel. Zoom con cursore o pizzico.
+- La finestra della timeline segue il cue selezionato; «Stacca» o Cmd+< la
+  riporta in primo piano senza aprirne una seconda.
+
+Teste mobili
+- Movimenti di Pan e Tilt rivisti: sono più fluidi e restano coerenti con
+  l'anteprima 3D, la calibrazione e le posizioni salvate.
+
+Riepilogo della 0.3.8 (rispetto alla 0.3.7)
 
 Mixer (pulsante «Mixer» accanto a Keypad, oppure Cmd+Maiusc+M)
 - Nuovo mixer luci virtuale, con il pannello del Showtec SM-16/2 FX: Fixture A/B,
@@ -73,8 +105,10 @@ Riepilogo della 0.3.7 (nuovo rispetto alla 0.3.5)
 - Versione mostrata nel menu File e in «Info».
 
 Pacchetti
-- Nuovi pacchetti 0.3.8: per Mac due dischi (.dmg), uno per i Mac con chip Apple
+- Nuovi pacchetti 0.3.9: per Mac due dischi (.dmg), uno per i Mac con chip Apple
   (arm64) e uno per i Mac Intel (x86_64); per Windows lo .zip. Tutti con queste note.
+- Per aggiornare: sostituisci la vecchia app con quella nuova. Gli show salvati,
+  la libreria dei fari e le impostazioni non vengono cancellati.
 
 <!-- CHANGELOG_END -->
 
@@ -87,13 +121,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.3.8** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.3.9** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.3.8](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.8-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.8/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.8/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.8)
+[![Windows 64 bit — scarica v0.3.9](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.9-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.8](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.8-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.8/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.8/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.8)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.9](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.9-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9)
 
-[![macOS Intel — v0.3.8](https://img.shields.io/badge/macOS-Intel%20v0.3.8-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.8/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.8/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.8)
+[![macOS Intel — v0.3.9](https://img.shields.io/badge/macOS-Intel%20v0.3.9-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
