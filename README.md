@@ -3,75 +3,75 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.3.9.3
+## Cosa c'è di nuovo in v0.4.0
 
-VDV_LIGHT PRO — novità della versione 0.3.9.3
+VDV_LIGHT PRO — novità della versione 0.4.0
 Autore: Matteo Tibiletti
 
-Pagina download — versione 0.3.9.3
-Questa versione aggiunge il Monitor DMX in tempo reale (che sostituisce la
-vista dei fari accesi nel pannello di destra), il menu «Finestre» e la modifica
-dei valori dal monitor con cursori, ANNULLA e SALVA. Gli show salvati con la
-0.3.9.2 e le versioni precedenti si aprono senza problemi.
+Pagina download — versione 0.4.0
+Questa versione aggiunge il menu «Salva…» nella dashboard luci (nel cue
+corrente, in un cue nuovo o negli appunti) con l'incolla delle impostazioni su
+uno o più cue, la chiusura delle finestre con Ctrl/Cmd+W senza chiudere il
+progetto per sbaglio, la dissolvenza automatica del secondo Esc e il cue BUIO
+già pronto, sul tasto B, in ogni nuovo workspace. Gli show salvati con le
+versioni 0.3.x si aprono senza problemi: al primo avvio le impostazioni vengono
+solo aggiornate al nuovo numero di versione.
 
-Novità rispetto alla 0.3.9.2
+Novità rispetto alla 0.3.9.3
 
-Monitor DMX (pannello di destra)
-- Il pannello di destra si apre sul nuovo «Monitor DMX», ispirato al Banco
-  Semplice di QLC+: un menu Universo e una colonna per ogni canale DMX, affiancate
-  e con scorrimento orizzontale. Ogni colonna mostra una barra verticale, il
-  valore reale 0–255 e il numero del canale, con il nome della funzione (Pan,
-  Tilt, Intensità…) in alto quando il faro è noto. Passando il mouse si vede il
-  faro e il canale.
-- Mostra quello che il programma sta davvero mandando in uscita (dopo Blackout e
-  dopo il keyframe in modifica), non il valore impostato nell'interfaccia, così
-  si vede se un canale, per esempio un movimento, cambia perché lo hai comandato
-  tu o da solo. Si aggiorna circa 30 volte al secondo.
-- Un canale che cambia lampeggia in giallo e poi si calma; i canali a zero sono in
-  tono spento. Filtri: «solo canali dei fari» e «solo valori ≠ 0».
-- Vista «griglia 16×32»: tutti i 512 canali insieme in una griglia di 16 colonne
-  per 32 righe, come la finestra DMX di QLab (un valore in ogni cella, lampeggio
-  quando cambia, il faro e il canale passando il mouse). La vista a colonne resta
-  quella predefinita e l'unica modificabile.
-- Se nessuna uscita DMX è attiva, lo dice: i valori sono quelli che verrebbero
-  inviati. La vista dei fari accesi resta nella scheda «Luci».
+Dashboard luci: pulsante «Salva…»
+- In basso a destra c'è un pulsante combinato «💾 Salva…» con tre voci:
+  «Salva nel cue corrente» (chiede «Stai sovrascrivendo il contenuto del cue
+  attualmente selezionato, sei sicuro?» con Sì e No), «Salva le impostazioni in
+  un nuovo cue luci» e «Copia le impostazioni negli appunti».
+- Per «impostazioni» si intendono tutti i fari come sono adesso. I canali DMX
+  vengono salvati come valori interi, come fa QLab quando fotografa le luci.
+- «Copia le impostazioni negli appunti» mette negli appunti un testo leggibile
+  (un faro per riga, solo i canali non a riposo) e tiene le impostazioni anche
+  dentro il programma.
+- Tasto destro su un cue › «Incolla impostazioni nel cue selezionato»: incolla
+  le impostazioni copiate nel cue, oppure in tutti i cue luci selezionati insieme
+  («…nei cue selezionati (N)»); un solo passo di annulla. Disattivato finché non
+  hai copiato qualcosa. Scorciatoia predefinita Cmd+Alt+V (modificabile).
 
-Monitor in finestra separata
-- «⧉ Stacca» apre il monitor in una finestra a parte, che si può spostare e
-  ridimensionare (le barre seguono l'altezza); «⮌ Aggancia» (o chiudere la
-  finestra) lo riporta a destra. Lo stesso comando è nel menu Finestre.
+Chiusura delle finestre con Ctrl/Cmd+W
+- Se in primo piano c'è una finestra (dashboard, impostazioni luci DMX,
+  movimento, mixer, calibrazione, impostazioni, novità, info, guida…) la
+  scorciatoia chiude solo quella. Se in primo piano c'è la finestra del
+  progetto, chiude il progetto con la richiesta di salvare le modifiche.
+- Le finestre separate (timeline, keypad, monitor DMX, schermo di uscita) si
+  chiudono da sole quando sono quelle attive. Con una domanda aperta la
+  scorciatoia non fa nulla.
 
-Modifica dal monitor
-- Con la riproduzione ferma (Esc) il pulsante «✏ Modifica» si attiva: le barre
-  diventano cursori con una stanghetta orizzontale ben visibile, da trascinare o
-  cliccare. Sotto ogni cursore il valore (in DMX oppure in %, a scelta) cambia in
-  diretta e si può anche scrivere a mano.
-- Le luci seguono subito. «ANNULLA» rimette tutto com'era prima della modifica;
-  «SALVA» tiene i valori come quelli impostati nella dashboard (e li scrive nel
-  cue che stai modificando lì). Se parte una riproduzione durante la modifica,
-  la modifica viene annullata.
-- Per Pan e Tilt il valore tiene conto della calibrazione della testa. I canali
-  a 16 bit, quelli senza faro e quelli spenti non si modificano.
+Esc
+- Il primo Esc sfuma tutto come prima. Il secondo Esc, mentre la dissolvenza è in
+  corso, ora applica a audio, video e immagini in esecuzione una dissolvenza di
+  chiusura automatica di 2 secondi (invece di fermarli di colpo); gli altri cue si
+  fermano subito. La durata si cambia in Impostazioni › Generale («Dissolvenza
+  del secondo Esc», 0 = si fermano subito). Un terzo Esc ferma tutto subito.
 
-Menu «Finestre»
-- Nuovo menu in alto che raggruppa tutte le finestre: Dashboard luci, Movimento
-  (apre quello selezionato o ne crea uno), Impostazioni luci DMX, Monitor DMX
-  (anche in finestra separata), Schermo, Schermo di uscita, Palco 3D, Timeline
-  separata, Mixer, Keypad, Impostazioni, più un sottomenu «Aggiungi» con tutti i
-  comandi della barra (tipi di cue, Movimento, Preset, Keypad).
+Nuovi workspace
+- Ogni nuovo workspace (schermata iniziale, «Nuovo show», dopo la chiusura
+  dell'ultimo file) parte con il cue BUIO già in lista, con il trigger sul tasto
+  B. Se avevi tolto il BUIO dal menu Preset il workspace resta vuoto. I file che
+  apri o importi non vengono modificati.
 
 Regole verificate su QLab (indirizzi delle funzioni in MECHANICS.md)
-- Finestra «DMX status» di QLab: 512 canali per universo in una griglia 16×32,
-  256 livelli di valore, aggiornamento al massimo ogni 0,1 s (il monitor è più
-  veloce di proposito), valore scritto tagliato tra 0 e 255, una sola finestra
-  riutilizzata.
+- Istantanea delle luci (valori arrotondati alla precisione di visualizzazione),
+  incolla attivo solo dopo una copia, domanda di chiusura con tre risposte,
+  secondo panic di QLab (ferma subito: qui è sostituito dalla dissolvenza).
+
+Versione
+- La versione passa a 0.4.0: il numero interno («build») diventa 400, quindi le
+  vecchie impostazioni vengono aggiornate una volta, senza toccare show e
+  libreria fari.
 
 Cosa non c'è (ancora)
-- Nel monitor di QLab i valori scritti vanno subito alle luci; qui sono una
-  bozza con ANNULLA e SALVA, e solo a riproduzione ferma (scelta voluta).
-- Le note di scena (teste mobili grandi che non arrivano al pianoforte, teste
-  piccole sfocate, controluce rosso per Sara) non sono modifiche al programma e
-  non sono incluse; il preset «Sara – controluce rosso» non è stato creato.
+- Il filtro di QLab che lascia fuori dall'istantanea i valori a riposo non è
+  stato capito: qui vengono salvati tutti i canali.
+- Il comando di chiusura con Ctrl/Cmd+W non chiude da solo le finestre di
+  dialogo (ad esempio «Nuovo gruppo»): vanno chiuse con i loro pulsanti.
+
 <!-- CHANGELOG_END -->
 
 ## Ricevi gli aggiornamenti via email
@@ -83,13 +83,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.3.9.3** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.4.0** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.3.9.3](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.9.3-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.3/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.3/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.3)
+[![Windows 64 bit — scarica v0.4.0](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.4.0-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.0/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.0/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.0)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.9.3](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.9.3-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.3/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.3/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.3)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.4.0](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.4.0-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.0/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.0/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.0)
 
-[![macOS Intel — v0.3.9.3](https://img.shields.io/badge/macOS-Intel%20v0.3.9.3-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.3/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.3/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.3)
+[![macOS Intel — v0.4.0](https://img.shields.io/badge/macOS-Intel%20v0.4.0-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.0/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.0/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.0)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
