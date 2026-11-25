@@ -3,18 +3,65 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.3.9.1
+## Cosa c'è di nuovo in v0.3.9.2
 
-VDV_LIGHT PRO — novità della versione 0.3.9.1
+VDV_LIGHT PRO — novità della versione 0.3.9.2
 Autore: Matteo Tibiletti
 
-Pagina download — versione 0.3.9.1
-Questa versione sistema il movimento delle teste mobili (fluidità, calibrazione,
-modifica dei keyframe in diretta sul palco 3D e sulle luci vere), rende più
-affidabile l'ascolto della console nell'autodetect e aggiunge il Blackout.
-Gli show salvati con la 0.3.9 e la 0.3.8 si aprono senza problemi.
+Pagina download — versione 0.3.9.2
+Questa versione raggruppa i fari per americana nella Dashboard e nel palco 3D, e
+rende chiaro il collegamento all'impianto nell'Autodetect (interfaccia USB
+ENTTEC, uscite attive, Blackout). Gli show salvati con la 0.3.9.1 e le versioni
+precedenti si aprono senza problemi.
 
-Novità rispetto alla 0.3.9
+Novità rispetto alla 0.3.9.1
+
+Fari per americana
+- In «I miei fari» ci sono due nuove colonne: «Americana» (su quale americana è
+  appeso il faro) e «Posizione (m)» (dove si trova lungo l'americana, 0 = centro,
+  + verso destra). Il faro compare lì anche nel palco 3D.
+- Nel palco 3D il faro si trascina liberamente lungo la sua americana, anche
+  oltre gli altri fari; si può cambiare anche da PALCO.
+- I nuovi show partono con tre americane, dal fronte al fondo: frontale, interna
+  e fondale. Gli show già salvati mantengono le loro americane.
+
+Dashboard luci
+- I fari sono raccolti in menu compressi, uno per americana, in ordine dal
+  fronte: AMERICANA FRONTALE, AMERICANA INTERNA, AMERICANA FONDALE (con il
+  numero di fari). Cliccando su un'americana si vedono fari e canali dei soli
+  fari che si trovano su quell'americana.
+- I fari che non sono su nessuna americana stanno in «ALTRI FARI», così non
+  spariscono.
+- In fondo c'è «GRUPPI», presente solo se hai creato almeno un gruppo: lì vedi e
+  controlli i gruppi di luci. I fari di un gruppo compaiono una volta sola.
+- Scegliere un faro (dall'elenco o dal palco 3D) apre il menu in cui si trova; la
+  ricerca apre tutti i menu con risultati; i menu vuoti non vengono mostrati.
+
+Autodetect e interfaccia USB
+- Nuovo riquadro «Collegamento all'impianto»: dice se c'è un'uscita DMX attiva,
+  avvisa se il Blackout è acceso (con «Riaccendi»), elenca le interfacce USB
+  trovate sul computer e permette di usarle come uscita con un clic.
+- Nuovo pulsante «Cerca fari (USB)»: parla con l'interfaccia ENTTEC DMX USB Pro,
+  ne legge firmware e seriale, capisce se è un Mk2 (due uscite DMX, RDM) o un Pro
+  originale e cerca con l'RDM i fari collegati.
+- Il DMX va in una sola direzione: un faro normale non risponde. Il
+  riconoscimento automatico funziona solo con fari che hanno l'RDM dietro
+  un'interfaccia con RDM (per esempio ENTTEC DMX USB Pro Mk2) o un nodo Art-Net
+  con RDM. Con un'interfaccia senza RDM il programma lo dice e i fari vanno
+  aggiunti a mano («I miei fari» e «Libreria fari»).
+- Il pacchetto che manda il DMX all'interfaccia segue la forma usata da QLab.
+
+Regole verificate su QLab (indirizzi delle funzioni in MECHANICS.md)
+- Messaggi di rilevamento dell'interfaccia ENTTEC (versione hardware, Mk2),
+  gruppi di luci (ogni faro una sola volta).
+
+Cosa non c'è (ancora)
+- Le americane e il menu GRUPPI non esistono in QLab: sono una scelta di questo
+  programma. I gruppi dentro altri gruppi non sono previsti.
+- La seconda uscita DMX di un ENTTEC Mk2 non è ancora usata.
+- La ricerca tramite interfaccia USB funziona solo su Mac e Linux (non Windows).
+
+Riepilogo della 0.3.9.1 (rispetto alla 0.3.9)
 
 Movimento delle teste mobili: più fluido
 - Prima il movimento poteva andare «a scatti» anche con lo stile Fluido: il
@@ -163,7 +210,7 @@ Riepilogo della 0.3.7 (nuovo rispetto alla 0.3.5)
 - Versione mostrata nel menu File e in «Info».
 
 Pacchetti
-- Nuovi pacchetti 0.3.9.1: per Mac due dischi (.dmg), uno per i Mac con chip Apple
+- Nuovi pacchetti 0.3.9.2: per Mac due dischi (.dmg), uno per i Mac con chip Apple
   (arm64) e uno per i Mac Intel (x86_64); per Windows lo .zip. Tutti con queste note.
 - Per aggiornare: sostituisci la vecchia app con quella nuova. Gli show salvati,
   la libreria dei fari e le impostazioni non vengono cancellati.
@@ -179,13 +226,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.3.9.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.3.9.2.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.3.9.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.9.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.1/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.1/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.1)
+[![Windows 64 bit — scarica v0.3.9.2.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.9.2.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.2.1/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.2.1/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.2.1)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.9.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.9.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.1)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.9.2.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.9.2.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.2.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.2.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.2.1)
 
-[![macOS Intel — v0.3.9.1](https://img.shields.io/badge/macOS-Intel%20v0.3.9.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.1)
+[![macOS Intel — v0.3.9.2.1](https://img.shields.io/badge/macOS-Intel%20v0.3.9.2.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.2.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.2.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.2.1)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
