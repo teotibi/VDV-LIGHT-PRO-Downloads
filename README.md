@@ -3,18 +3,77 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.3.9.2
+## Cosa c'è di nuovo in v0.3.9.3
 
-VDV_LIGHT PRO — novità della versione 0.3.9.2
+VDV_LIGHT PRO — novità della versione 0.3.9.3
 Autore: Matteo Tibiletti
 
-Pagina download — versione 0.3.9.2
-Questa versione raggruppa i fari per americana nella Dashboard e nel palco 3D, e
-rende chiaro il collegamento all'impianto nell'Autodetect (interfaccia USB
-ENTTEC, uscite attive, Blackout). Gli show salvati con la 0.3.9.1 e le versioni
-precedenti si aprono senza problemi.
+Pagina download — versione 0.3.9.3
+Questa versione aggiunge il Monitor DMX in tempo reale (che sostituisce la
+vista dei fari accesi nel pannello di destra), il menu «Finestre» e la modifica
+dei valori dal monitor con cursori, ANNULLA e SALVA. Gli show salvati con la
+0.3.9.2 e le versioni precedenti si aprono senza problemi.
 
-Novità rispetto alla 0.3.9.1
+Novità rispetto alla 0.3.9.2
+
+Monitor DMX (pannello di destra)
+- Il pannello di destra si apre sul nuovo «Monitor DMX», ispirato al Banco
+  Semplice di QLC+: un menu Universo e una colonna per ogni canale DMX, affiancate
+  e con scorrimento orizzontale. Ogni colonna mostra una barra verticale, il
+  valore reale 0–255 e il numero del canale, con il nome della funzione (Pan,
+  Tilt, Intensità…) in alto quando il faro è noto. Passando il mouse si vede il
+  faro e il canale.
+- Mostra quello che il programma sta davvero mandando in uscita (dopo Blackout e
+  dopo il keyframe in modifica), non il valore impostato nell'interfaccia, così
+  si vede se un canale, per esempio un movimento, cambia perché lo hai comandato
+  tu o da solo. Si aggiorna circa 30 volte al secondo.
+- Un canale che cambia lampeggia in giallo e poi si calma; i canali a zero sono in
+  tono spento. Filtri: «solo canali dei fari» e «solo valori ≠ 0».
+- Vista «griglia 16×32»: tutti i 512 canali insieme in una griglia di 16 colonne
+  per 32 righe, come la finestra DMX di QLab (un valore in ogni cella, lampeggio
+  quando cambia, il faro e il canale passando il mouse). La vista a colonne resta
+  quella predefinita e l'unica modificabile.
+- Se nessuna uscita DMX è attiva, lo dice: i valori sono quelli che verrebbero
+  inviati. La vista dei fari accesi resta nella scheda «Luci».
+
+Monitor in finestra separata
+- «⧉ Stacca» apre il monitor in una finestra a parte, che si può spostare e
+  ridimensionare (le barre seguono l'altezza); «⮌ Aggancia» (o chiudere la
+  finestra) lo riporta a destra. Lo stesso comando è nel menu Finestre.
+
+Modifica dal monitor
+- Con la riproduzione ferma (Esc) il pulsante «✏ Modifica» si attiva: le barre
+  diventano cursori con una stanghetta orizzontale ben visibile, da trascinare o
+  cliccare. Sotto ogni cursore il valore (in DMX oppure in %, a scelta) cambia in
+  diretta e si può anche scrivere a mano.
+- Le luci seguono subito. «ANNULLA» rimette tutto com'era prima della modifica;
+  «SALVA» tiene i valori come quelli impostati nella dashboard (e li scrive nel
+  cue che stai modificando lì). Se parte una riproduzione durante la modifica,
+  la modifica viene annullata.
+- Per Pan e Tilt il valore tiene conto della calibrazione della testa. I canali
+  a 16 bit, quelli senza faro e quelli spenti non si modificano.
+
+Menu «Finestre»
+- Nuovo menu in alto che raggruppa tutte le finestre: Dashboard luci, Movimento
+  (apre quello selezionato o ne crea uno), Impostazioni luci DMX, Monitor DMX
+  (anche in finestra separata), Schermo, Schermo di uscita, Palco 3D, Timeline
+  separata, Mixer, Keypad, Impostazioni, più un sottomenu «Aggiungi» con tutti i
+  comandi della barra (tipi di cue, Movimento, Preset, Keypad).
+
+Regole verificate su QLab (indirizzi delle funzioni in MECHANICS.md)
+- Finestra «DMX status» di QLab: 512 canali per universo in una griglia 16×32,
+  256 livelli di valore, aggiornamento al massimo ogni 0,1 s (il monitor è più
+  veloce di proposito), valore scritto tagliato tra 0 e 255, una sola finestra
+  riutilizzata.
+
+Cosa non c'è (ancora)
+- Nel monitor di QLab i valori scritti vanno subito alle luci; qui sono una
+  bozza con ANNULLA e SALVA, e solo a riproduzione ferma (scelta voluta).
+- Le note di scena (teste mobili grandi che non arrivano al pianoforte, teste
+  piccole sfocate, controluce rosso per Sara) non sono modifiche al programma e
+  non sono incluse; il preset «Sara – controluce rosso» non è stato creato.
+
+Riepilogo della 0.3.9.2 (rispetto alla 0.3.9.1)
 
 Fari per americana
 - In «I miei fari» ci sono due nuove colonne: «Americana» (su quale americana è
@@ -210,7 +269,7 @@ Riepilogo della 0.3.7 (nuovo rispetto alla 0.3.5)
 - Versione mostrata nel menu File e in «Info».
 
 Pacchetti
-- Nuovi pacchetti 0.3.9.2: per Mac due dischi (.dmg), uno per i Mac con chip Apple
+- Nuovi pacchetti 0.3.9.3: per Mac due dischi (.dmg), uno per i Mac con chip Apple
   (arm64) e uno per i Mac Intel (x86_64); per Windows lo .zip. Tutti con queste note.
 - Per aggiornare: sostituisci la vecchia app con quella nuova. Gli show salvati,
   la libreria dei fari e le impostazioni non vengono cancellati.
@@ -226,13 +285,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.3.9.2.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.3.9.3.2.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.3.9.2.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.9.2.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.2.1/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.2.1/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.2.1)
+[![Windows 64 bit — scarica v0.3.9.3.2.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.3.9.3.2.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.3.2.1/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.3.2.1/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.3.2.1)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.9.2.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.9.2.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.2.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.2.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.2.1)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.3.9.3.2.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.3.9.3.2.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.3.2.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.3.2.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.3.2.1)
 
-[![macOS Intel — v0.3.9.2.1](https://img.shields.io/badge/macOS-Intel%20v0.3.9.2.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.2.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.2.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.2.1)
+[![macOS Intel — v0.3.9.3.2.1](https://img.shields.io/badge/macOS-Intel%20v0.3.9.3.2.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.3.9.3.2.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.3.9.3.2.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.3.9.3.2.1)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
