@@ -3,21 +3,35 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.4.0
+## Cosa c'è di nuovo in v0.4.1
 
-VDV_LIGHT PRO — novità della versione 0.4.0
+VDV_LIGHT PRO — novità della versione 0.4.1
 Autore: Matteo Tibiletti
 
-Pagina download — versione 0.4.0
-Questa versione aggiunge il menu «Salva…» nella dashboard luci (nel cue
-corrente, in un cue nuovo o negli appunti) con l'incolla delle impostazioni su
-uno o più cue, la chiusura delle finestre con Ctrl/Cmd+W senza chiudere il
-progetto per sbaglio, la dissolvenza automatica del secondo Esc e il cue BUIO
-già pronto, sul tasto B, in ogni nuovo workspace. Gli show salvati con le
-versioni 0.3.x si aprono senza problemi: al primo avvio le impostazioni vengono
-solo aggiornate al nuovo numero di versione.
+Pagina download — versione 0.4.1
+Questa versione sistema il workspace nuovo: la schermata iniziale (Nuovo
+workspace, Apri, Riapri l'ultimo, Importa da QLab 5) resta com'era e, scegliendo
+«Nuovo workspace», la lista si apre subito con il cue BUIO pronto sul tasto B.
+Qui sotto trovi le novità della 0.4.1 e quelle della 0.4.0.
 
-Novità rispetto alla 0.3.9.3
+Novità della 0.4.1
+
+Nuovo workspace
+- Il cue BUIO con il trigger B c'è sempre in un workspace nuovo, anche se in
+  passato lo avevi tolto dal menu Preset (prima, in quel caso, la lista restava
+  vuota).
+- La schermata iniziale resta aperta finché non scegli qualcosa (nuovo, apri,
+  riapri l'ultimo, importa da QLab 5): il BUIO messo di default non la fa più
+  sparire da sola.
+- Un workspace che contiene solo il BUIO non toccato conta come vuoto: se apri un
+  file prende il suo posto, senza creare una scheda in più.
+
+Versione
+- La versione passa a 0.4.1 (numero interno 401): le impostazioni salvate dalla
+  0.4.0 vengono solo aggiornate al nuovo numero, show e libreria fari non si
+  toccano.
+
+Novità della 0.4.0
 
 Dashboard luci: pulsante «Salva…»
 - In basso a destra c'è un pulsante combinato «💾 Salva…» con tre voci:
@@ -53,7 +67,7 @@ Esc
 Nuovi workspace
 - Ogni nuovo workspace (schermata iniziale, «Nuovo show», dopo la chiusura
   dell'ultimo file) parte con il cue BUIO già in lista, con il trigger sul tasto
-  B. Se avevi tolto il BUIO dal menu Preset il workspace resta vuoto. I file che
+  B. Il BUIO c'è sempre, anche se lo hai tolto dal menu Preset. I file che
   apri o importi non vengono modificati.
 
 Regole verificate su QLab (indirizzi delle funzioni in MECHANICS.md)
@@ -83,13 +97,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.4.0** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.4.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.4.0](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.4.0-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.0/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.0/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.0)
+[![Windows 64 bit — scarica v0.4.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.4.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.1/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.1/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.1)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.4.0](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.4.0-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.0/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.0/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.0)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.4.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.4.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.1)
 
-[![macOS Intel — v0.4.0](https://img.shields.io/badge/macOS-Intel%20v0.4.0-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.0/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.0/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.0)
+[![macOS Intel — v0.4.1](https://img.shields.io/badge/macOS-Intel%20v0.4.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.1)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
