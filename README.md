@@ -3,13 +3,35 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.4.2
+## Cosa c'è di nuovo in v0.4.3.1
 
-VDV_LIGHT PRO — novità della versione 0.4.2
+VDV_LIGHT PRO — novità della versione 0.4.3.1
 Autore: Matteo Tibiletti
 
-Pagina download — versione 0.4.2
-Questa versione porta il PALCO a un impianto completo: preset impianto luci a portata di mano e salvabili su file (da tenere su Drive), casse audio sul palco con il bilanciamento di ogni suono, e tre comodità sulla lista dei cue: «Copia / Incolla attributi», Cmd+A per selezionare tutto e la domanda «Dissolvenza» con più cue scelti. Gli show e le impostazioni delle versioni 0.4.x si aprono senza problemi.
+Pagina download — versione 0.4.3.1
+La 0.4.3.1 arriva subito dopo la 0.4.3, quindi qui trovi le novità di tutte e due. Nella lista dei cue ora puoi allargare le colonne a mano o farle adattare al contenuto, così i titoli lunghi si leggono per intero. Gli show e le impostazioni delle versioni 0.4.x si aprono senza problemi.
+
+Novità della 0.4.3.1
+
+Lista dei cue: colonne regolabili
+- Trascina il divisorio tra due colonne dell'intestazione per allargare quella a sinistra (quella a destra si restringe).
+- Doppio clic sul divisorio: la colonna si adatta al testo più lungo che contiene (titoli dei brani, nomi dei file e destinazioni).
+- Clic destro sull'intestazione: le colonne tornano come all'inizio.
+- Larghezze minime: «N°» e «Poi» 30, «Attesa prima» e «Durata» 60 (come nell'originale). Le larghezze non si salvano ancora alla chiusura del programma.
+- La lista dei cue è quella di sempre: la ricostruzione da zero fatta per errore è stata scartata.
+
+Novità della 0.4.3 (rielencate qui)
+
+Monitor DMX
+- Una colonna per ogni canale DMX con barra, valore reale 0–255 e numero del canale: mostra quello che il programma sta davvero inviando, anche durante blackout e modifica dei keyframe. Un canale che cambia lampeggia.
+- In sola lettura finché la riproduzione è in corso; con Esc e «Modifica» le barre diventano cursori da trascinare o scrivere (DMX o %), con ANNULLA e SALVA. Può stare in una finestra a parte (Stacca / Aggancia).
+
+Finestre e comandi
+- Cmd+W (Ctrl+W) chiude la finestra in primo piano e chiude il progetto solo se è lui la finestra davanti.
+- Tasto destro su un cue luci: «Incolla impostazioni» copia nel cue (o in tutti quelli selezionati) le impostazioni copiate dalla dashboard.
+
+Interfacce DMX USB
+- Riconoscimento delle interfacce ENTTEC DMX USB Pro (nome, firmware) e ricerca dei fari RDM dietro di esse.
 
 Novità della 0.4.2
 
@@ -45,13 +67,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.4.2** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.4.3.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.4.2](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.4.2-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.2/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.2/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.2)
+[![Windows 64 bit — scarica v0.4.3.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.4.3.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.3.1/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.3.1/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.3.1)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.4.2](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.4.2-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.2/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.2/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.2)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.4.3.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.4.3.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.3.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.3.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.3.1)
 
-[![macOS Intel — v0.4.2](https://img.shields.io/badge/macOS-Intel%20v0.4.2-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.2/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.2/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.2)
+[![macOS Intel — v0.4.3.1](https://img.shields.io/badge/macOS-Intel%20v0.4.3.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.3.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.3.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.3.1)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
