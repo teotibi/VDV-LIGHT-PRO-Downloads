@@ -3,88 +3,36 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.4.1
+## Cosa c'è di nuovo in v0.4.2
 
-VDV_LIGHT PRO — novità della versione 0.4.1
+VDV_LIGHT PRO — novità della versione 0.4.2
 Autore: Matteo Tibiletti
 
-Pagina download — versione 0.4.1
-Questa versione sistema il workspace nuovo: la schermata iniziale (Nuovo
-workspace, Apri, Riapri l'ultimo, Importa da QLab 5) resta com'era e, scegliendo
-«Nuovo workspace», la lista si apre subito con il cue BUIO pronto sul tasto B.
-Qui sotto trovi le novità della 0.4.1 e quelle della 0.4.0.
+Pagina download — versione 0.4.2
+Questa versione porta il PALCO a un impianto completo: preset impianto luci a portata di mano e salvabili su file (da tenere su Drive), casse audio sul palco con il bilanciamento di ogni suono, e tre comodità sulla lista dei cue: «Copia / Incolla attributi», Cmd+A per selezionare tutto e la domanda «Dissolvenza» con più cue scelti. Gli show e le impostazioni delle versioni 0.4.x si aprono senza problemi.
 
-Novità della 0.4.1
+Novità della 0.4.2
 
-Nuovo workspace
-- Il cue BUIO con il trigger B c'è sempre in un workspace nuovo, anche se in
-  passato lo avevi tolto dal menu Preset (prima, in quel caso, la lista restava
-  vuota).
-- La schermata iniziale resta aperta finché non scegli qualcosa (nuovo, apri,
-  riapri l'ultimo, importa da QLab 5): il BUIO messo di default non la fa più
-  sparire da sola.
-- Un workspace che contiene solo il BUIO non toccato conta come vuoto: se apri un
-  file prende il suo posto, senza creare una scheda in più.
+Lista dei cue
+- Cmd+A (Ctrl+A) seleziona tutti i cue; Canc o Backspace li elimina tutti insieme (un solo Cmd+Z li riporta indietro). C'è anche Modifica › «Seleziona tutti i cue».
+- «Dissolvenza» con due o più cue scelti (audio, video, immagini, luci) apre la domanda: aggiungi una dissolvenza per ogni cue dopo l'ultimo selezionato; inserisci una dissolvenza dopo ogni cue; aggiungi una sola dissolvenza senza destinazione. I tasti 1, 2, 3 funzionano come scorciatoie e la scelta fatta per ultima resta evidenziata la volta dopo.
 
-Versione
-- La versione passa a 0.4.1 (numero interno 401): le impostazioni salvate dalla
-  0.4.0 vengono solo aggiornate al nuovo numero, show e libreria fari non si
-  toccano.
+Copia e incolla attributi (tasto destro su un cue)
+- «Copia attributi» (Cmd+Ctrl+C) copia tutto quello che è impostato in un cue: volume, dissolvenze, attese, luci, uscita audio…
+- «Incolla attributi…» (Cmd+Ctrl+V), su un cue dello stesso tipo (audio con audio, video con video, luci con luci), apre una finestra con una spunta per ogni attributo, con accanto il valore copiato: puoi incollare tutto o solo alcune cose (solo il volume, solo la dissolvenza, solo i fari scelti con i loro valori…). Il pulsante «Ultimi usati» spunta gli attributi incollati l'ultima volta. Su più cue insieme in un solo passo di annulla. Su Windows e Linux le scorciatoie sono Ctrl+Maiusc+C e Ctrl+Maiusc+V.
 
-Novità della 0.4.0
+PALCO: preset impianto luci
+- Nella barra del PALCO c'è il pulsante «⭐ Preset» (lo stesso menu di «Aggiungi › Preset») e, nella colonna a sinistra, i preset impianto in memoria: un clic e l'impianto torna, con i fari, i nomi, gli indirizzi e le posizioni sul palco 3D (Cmd+Z per tornare indietro).
+- Nel menu Preset: «Salva gli impianti in un file…» e «Carica impianti da un file…» (il formato è JSON), il pulsante 💾 su ogni preset per salvare solo quello, e lo stesso per i preset di cue. Caricando un file con un solo impianto, l'impianto viene richiamato subito nel workspace; con più impianti vanno in memoria e se ne richiama uno dal menu. Un preset con lo stesso nome viene sostituito: così un backup su Drive ripristina tutto.
+- Anche le casse audio e la modalità audio dello show viaggiano con il preset e con il file. I preset salvati con le versioni precedenti non hanno le casse: richiamali, sistema le casse e aggiornali con ↻.
 
-Dashboard luci: pulsante «Salva…»
-- In basso a destra c'è un pulsante combinato «💾 Salva…» con tre voci:
-  «Salva nel cue corrente» (chiede «Stai sovrascrivendo il contenuto del cue
-  attualmente selezionato, sei sicuro?» con Sì e No), «Salva le impostazioni in
-  un nuovo cue luci» e «Copia le impostazioni negli appunti».
-- Per «impostazioni» si intendono tutti i fari come sono adesso. I canali DMX
-  vengono salvati come valori interi, come fa QLab quando fotografa le luci.
-- «Copia le impostazioni negli appunti» mette negli appunti un testo leggibile
-  (un faro per riga, solo i canali non a riposo) e tiene le impostazioni anche
-  dentro il programma.
-- Tasto destro su un cue › «Incolla impostazioni nel cue selezionato»: incolla
-  le impostazioni copiate nel cue, oppure in tutti i cue luci selezionati insieme
-  («…nei cue selezionati (N)»); un solo passo di annulla. Disattivato finché non
-  hai copiato qualcosa. Scorciatoia predefinita Cmd+Alt+V (modificabile).
-
-Chiusura delle finestre con Ctrl/Cmd+W
-- Se in primo piano c'è una finestra (dashboard, impostazioni luci DMX,
-  movimento, mixer, calibrazione, impostazioni, novità, info, guida…) la
-  scorciatoia chiude solo quella. Se in primo piano c'è la finestra del
-  progetto, chiude il progetto con la richiesta di salvare le modifiche.
-- Le finestre separate (timeline, keypad, monitor DMX, schermo di uscita) si
-  chiudono da sole quando sono quelle attive. Con una domanda aperta la
-  scorciatoia non fa nulla.
-
-Esc
-- Il primo Esc sfuma tutto come prima. Il secondo Esc, mentre la dissolvenza è in
-  corso, ora applica a audio, video e immagini in esecuzione una dissolvenza di
-  chiusura automatica di 2 secondi (invece di fermarli di colpo); gli altri cue si
-  fermano subito. La durata si cambia in Impostazioni › Generale («Dissolvenza
-  del secondo Esc», 0 = si fermano subito). Un terzo Esc ferma tutto subito.
-
-Nuovi workspace
-- Ogni nuovo workspace (schermata iniziale, «Nuovo show», dopo la chiusura
-  dell'ultimo file) parte con il cue BUIO già in lista, con il trigger sul tasto
-  B. Il BUIO c'è sempre, anche se lo hai tolto dal menu Preset. I file che
-  apri o importi non vengono modificati.
-
-Regole verificate su QLab (indirizzi delle funzioni in MECHANICS.md)
-- Istantanea delle luci (valori arrotondati alla precisione di visualizzazione),
-  incolla attivo solo dopo una copia, domanda di chiusura con tre risposte,
-  secondo panic di QLab (ferma subito: qui è sostituito dalla dissolvenza).
+PALCO: casse audio e bilanciamento
+- Nel pannello a destra, «Casse audio»: aggiungi, dai un nome e posiziona le casse (anche trascinandole sul palco in EDIT); si disegnano nella vista 3D e si salvano con lo show. Lì c'è anche «Audio dello show»: stereo, mono o surround.
+- Su ogni cue audio, Dettagli › Audio › «Uscita audio»: modalità propria (o come lo show) e le casse a cui mandare il suono: tutte, solo sinistra, solo destra o un livello per ciascuna. Il surround riduce a stereo i file 5.1 e 7.1.
+- Il programma suona su un'unica uscita stereo: ogni cassa diventa un bilanciamento sinistra/destra in base a dove la metti sul palco. L'uscita separata per ogni cassa (scheda audio multicanale) non c'è ancora.
 
 Versione
-- La versione passa a 0.4.0: il numero interno («build») diventa 400, quindi le
-  vecchie impostazioni vengono aggiornate una volta, senza toccare show e
-  libreria fari.
-
-Cosa non c'è (ancora)
-- Il filtro di QLab che lascia fuori dall'istantanea i valori a riposo non è
-  stato capito: qui vengono salvati tutti i canali.
-- Il comando di chiusura con Ctrl/Cmd+W non chiude da solo le finestre di
-  dialogo (ad esempio «Nuovo gruppo»): vanno chiuse con i loro pulsanti.
+- La versione passa a 0.4.2 (numero interno 402): le impostazioni salvate dalla 0.4.1 vengono solo aggiornate al nuovo numero, show e libreria fari non si toccano.
 
 <!-- CHANGELOG_END -->
 
@@ -97,13 +45,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.4.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.4.2** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.4.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.4.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.1/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.1/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.1)
+[![Windows 64 bit — scarica v0.4.2](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.4.2-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.2/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.2/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.2)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.4.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.4.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.1)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.4.2](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.4.2-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.2/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.2/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.2)
 
-[![macOS Intel — v0.4.1](https://img.shields.io/badge/macOS-Intel%20v0.4.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.1)
+[![macOS Intel — v0.4.2](https://img.shields.io/badge/macOS-Intel%20v0.4.2-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.2/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.2/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.2)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
