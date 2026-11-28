@@ -3,13 +3,26 @@
 **Regia per spettacoli teatrali su macOS e Windows.** Gestisce cue, audio, video, immagini, testi e luci DMX da un'unica interfaccia. Importa i progetti QLab 5.
 
 <!-- CHANGELOG_START -->
-## Cosa c'è di nuovo in v0.4.3.1
+## Cosa c'è di nuovo in v0.4.5
 
-VDV_LIGHT PRO — novità della versione 0.4.3.1
+VDV_LIGHT PRO — novità della versione 0.4.5
 Autore: Matteo Tibiletti
 
-Pagina download — versione 0.4.3.1
-La 0.4.3.1 arriva subito dopo la 0.4.3, quindi qui trovi le novità di tutte e due. Nella lista dei cue ora puoi allargare le colonne a mano o farle adattare al contenuto, così i titoli lunghi si leggono per intero. Gli show e le impostazioni delle versioni 0.4.x si aprono senza problemi.
+Pagina download — versione 0.4.5
+Questa versione porta il COPIONE accanto ai cue: importi il testo dello spettacolo, lo segui durante lo show e colleghi i cue alle battute. Qui trovi anche le novità delle versioni 0.4.3.1, 0.4.3 e 0.4.2. Gli show e le impostazioni delle versioni 0.4.x si aprono senza problemi.
+
+Novità della 0.4.5
+
+Il copione (Vista › «CUE + COPIONE», «CUE + COPIONE + PALCO»; Cmd+4 e Cmd+5)
+- Due viste nuove: cue e copione affiancati, oppure cue, copione e palco (il palco più piccolo: cue e copione contano di più). Il copione si può anche staccare in una finestra a parte da portare su un altro schermo.
+- Importa testi (txt, md, rtf, html, Word, OpenDocument) e PDF. Si crea una copia di lavoro salvata dentro lo show: il file originale non viene mai toccato. «Togli il copione» elimina solo la copia di lavoro, poi puoi importarne un altro.
+- Si vede come un documento a pagine: fogli A4 bianchi, con lo zoom. Un PDF mantiene la sua impaginazione (pagina, posizione, rientri e dimensione di ogni riga); gli altri formati scorrono su fogli A4 (di un file Word non si leggono le pagine e i caratteri originali).
+- Modalità lettura (normale): il testo non si cambia per sbaglio. «Modifica»: cambi il testo, aggiungi o togli battute, didascalie, attese, commenti e pagine, sottolinei, barri, metti in grassetto. «Salva» salva il progetto con la copia di lavoro.
+- Collegare un cue: trascina il cue dalla lista su una parola (si evidenzia la parola) o a destra della riga (tutta la riga); oppure seleziona le parole e scegli «Collega a un cue» (uno esistente, uno nuovo, o un nuovo audio/video/immagine da un file). I colori sono quelli della palette dei cue.
+- Un clic su una parola o riga collegata arma quel cue e porta il cursore della lista su di lui; doppio clic (in lettura) lo fa partire. A ogni GO il copione scorre fino alla riga del cue successivo («Segui»).
+- Esporta il copione in PDF, txt, md, html, rtf; stampa tutto o solo un intervallo di pagine.
+- Finestre staccate (copione, monitor DMX, timeline): nessun limite di dimensione, barra del titolo propria. Doppio clic: dimensione originale. Triplo clic: si riagganciano al pannello principale.
+- La lista dei cue, quando è stretta accanto al copione, ha colonne più compatte.
 
 Novità della 0.4.3.1
 
@@ -67,13 +80,13 @@ Iscriviti per ricevere un messaggio quando viene pubblicata una nuova versione, 
 ## Scarica l'ultima versione
 
 <!-- APP_VERSION_BLOCK_START -->
-**Versione disponibile: v0.4.3.1** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
+**Versione disponibile: v0.4.5** — il numero è riportato anche sui pulsanti. I pulsanti scaricano l'ultima build completata per ciascun sistema operativo.
 
-[![Windows 64 bit — scarica v0.4.3.1](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.4.3.1-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.3.1/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.3.1/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.3.1)
+[![Windows 64 bit — scarica v0.4.5](https://img.shields.io/badge/Windows%2064%20bit-Scarica%20v0.4.5-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.5/VDV_LIGHT.PRO.-.Windows.zip) [![Download Windows](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.5/VDV_LIGHT.PRO.-.Windows.zip?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.5)
 
-[![macOS Apple Silicon — M1, M2, M3, M4 — v0.4.3.1](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.4.3.1-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.3.1/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.3.1/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.3.1)
+[![macOS Apple Silicon — M1, M2, M3, M4 — v0.4.5](https://img.shields.io/badge/macOS-M1%20%2F%20M2%20%2F%20M3%20%2F%20M4%20v0.4.5-111111?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.5/VDV_LIGHT.PRO-arm64.dmg) [![Download macOS Apple Silicon](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.5/VDV_LIGHT.PRO-arm64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.5)
 
-[![macOS Intel — v0.4.3.1](https://img.shields.io/badge/macOS-Intel%20v0.4.3.1-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.3.1/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.3.1/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.3.1)
+[![macOS Intel — v0.4.5](https://img.shields.io/badge/macOS-Intel%20v0.4.5-555555?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/download/v0.4.5/VDV_LIGHT.PRO-x86_64.dmg) [![Download macOS Intel](https://img.shields.io/github/downloads/teotibi/VDV-LIGHT-PRO-Downloads/v0.4.5/VDV_LIGHT.PRO-x86_64.dmg?label=download&style=flat-square)](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases/tag/v0.4.5)
 <!-- APP_VERSION_BLOCK_END -->
 
 [Altri download e versioni precedenti](https://github.com/teotibi/VDV-LIGHT-PRO-Downloads/releases)
